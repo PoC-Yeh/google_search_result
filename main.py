@@ -12,7 +12,7 @@ page_count = 0
 bar = progressbar.ProgressBar(max_value=progressbar.UnknownLength) 
 serp_list = []
 
-for page in range(0, 3):
+for page in range(0, 3):  #page1 ~ page2
     text = requests.get(url).text
     soup = BeautifulSoup(text, "html.parser")
     
